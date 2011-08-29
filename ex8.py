@@ -10,3 +10,7 @@ print formatter % (
     "But it didn't sing.",
     "So I said goodnight."
 )
+
+# When printing the last line. But it didn't sing is in double quotes
+# instead of single quotes, like the rest, because it contains a
+# single quote itself.

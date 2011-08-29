@@ -13,3 +13,7 @@ print tabby_cat
 print persian_cat
 print backslash_cat
 print fat_cat
+
+print "%r %r" % ("\"", "\'")
+print '%r %r' % ('\"', '\'')
+print "%s %s" % ("\"", "\'")

@@ -19,3 +19,5 @@ end12 = "r"
 # watch the comma at the end. Try removing it to see what happens.
 print end1 + end2 + end3 + end4 + end5 + end6, 
 print end7 + end8 + end9 + end10 + end11 + end12
+# A trailing comma on a print means you want the following print
+# to be on the same line as the current print

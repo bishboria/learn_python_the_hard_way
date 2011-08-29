@@ -13,3 +13,9 @@ print "There will be", cars_not_driven, "empty cars today."
 print "We can transport", carpool_capacity, "people today."
 print "We have", passengers, "to carpool today."
 print "We need to put about", average_passengers_per_car, "in each car."
+
+# Extra Credit: There was a NameError because the author had misspelt
+# carpool_capacity. Perhaps if he'd used Vim he could've used <c-n> :P
+
+# space_in_a_car uses 4.0 because perhaps parts of people will be
+# trafficked

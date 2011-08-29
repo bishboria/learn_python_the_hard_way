@@ -1,5 +1,6 @@
-print "I will now count my chickens:"
+print "I will now count my chickens:" # printing output to the terminal
 
+# printing output along with the result of a calculation. A space is inserted on the output.
 print "Hens", 25 + 30 / 6
 print "Roosters", 100 - 25 * 3 % 4
 

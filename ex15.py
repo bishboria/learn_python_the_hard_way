@@ -1,14 +1,14 @@
 from sys import argv
 
-script = argv
+script, filename = argv
 
-filename = raw_input("type in the name of your file: ")
 txt = open(filename)
 
-print "Here's your file %r:" % filename
-print txt.read()
+bytes_to_read = 15
+print "Here's the first %d characters of the file %r:" % (bytes_to_read, filename)
+print txt.read(15)
 
-file_again = raw_input("Type in the name of your file AGAIN: ")
-txt_again = open(file_again)
+txt_again = open(filename)
 
-print txt_again.read()
+print "Here's the first line of the file %r:" % filename
+print txt_again.readline()

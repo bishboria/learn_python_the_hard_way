@@ -5,6 +5,12 @@ script, input_file = argv
 def print_all(f):
   print f.read()
 
+# seek moves to a new file position and takes 1 or 2 parameters
+# first param is the offset by which you want to move.
+# The second (optional) parameter can have 1 of 3 different values:
+#   0 (default): start from beginning of file. offset should be +ve
+#   1: move from current position in file. offset can be +/-ve
+#   2: move from end of file. offset -ve. some platforms allow +ve...
 def rewind(f):
   f.seek(0)
 

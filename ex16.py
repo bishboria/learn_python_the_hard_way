@@ -9,7 +9,7 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
-target = open(filename, 'w')
+target = open(filename, 'w+')
 
 print "Now I'm going to ask you for three lines."
 
@@ -40,3 +40,5 @@ target.close()
 
 # Extra Credit 4: 'w' was passed as an extra parameter as this signifies
 # that you want to file to be written to.
+
+# Extra Credit 5: if a file is opened up with 'w' or 'w+' then no truncate is necessary.

@@ -11,9 +11,6 @@ raw_input("?")
 print "Opening the file..."
 target = open(filename, 'w')
 
-print "Truncating the file.  Goodbye!"
-target.truncate()
-
 print "Now I'm going to ask you for three lines."
 
 line1 = raw_input("line 1: ")
@@ -40,3 +37,6 @@ print "Oh, open the file back up! Let's see what you wrote:"
 target = open(filename)
 print target.read()
 target.close()
+
+# Extra Credit 4: 'w' was passed as an extra parameter as this signifies
+# that you want to file to be written to.

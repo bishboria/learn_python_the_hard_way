@@ -6,3 +6,5 @@ open(argv[2], 'w').write( open(argv[1]).read() )
 from ex17mod import testmod
 print "About to run a test module function"
 testmod()
+
+# Extra Credit 6: closing a file is a good idea as it frees up system resources

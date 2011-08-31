@@ -22,3 +22,8 @@ print "Alright, all done."
 
 output.close()
 input.close()
+
+# if you just use import ex17mod then you call like this: ex17mod.testmod()
+from ex17mod import testmod
+print "About to run a test module function"
+testmod()

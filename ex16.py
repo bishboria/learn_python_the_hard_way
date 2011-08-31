@@ -22,17 +22,21 @@ line3 = raw_input("line 3: ")
 
 print "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+new_line = "\n"
+output = "%s%s%s%s%s%s" % (
+    line1,
+    new_line,
+    line2,
+    new_line,
+    line3,
+    new_line
+)
+target.write(output)
 
 print "And finally, we close it."
 target.close()
 
-print "Oh, open the fileback up! Let's see what you wrote:"
+print "Oh, open the file back up! Let's see what you wrote:"
 target = open(filename)
 print target.read()
 target.close()

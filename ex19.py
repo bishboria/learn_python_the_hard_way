@@ -22,3 +22,15 @@ cheese_and_crackers(10 + 20, 5 + 6)
 
 print "And we can combine the two, variables and math:"
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+# Extra Credit: my own function run different ways
+def function_caller(func, *argument_to_the_func):
+  print "about to call %r, with values %r" % (func, argument_to_the_func)
+  func(*argument_to_the_func)
+
+def print_wrapper(arg):
+  print arg
+
+function_caller(print_wrapper, "some text that will be printed")
+
+function_caller(cheese_and_crackers, 20, 30)

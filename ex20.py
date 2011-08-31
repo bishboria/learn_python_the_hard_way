@@ -32,8 +32,19 @@ print "Let's print three lines:"
 current_line = 1
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file)
+
+# += concatenates a variable with the new value on the RHS.
+# addition for numbers. String concatenation for strings.
+# appending for lists
+some_string = "harro"
+some_string += " hans brix"
+print some_string
+
+some_list = [123]
+some_list += ["oien"]
+print some_list

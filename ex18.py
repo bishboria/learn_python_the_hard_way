@@ -19,3 +19,6 @@ print_two("Zed","Shaw")
 print_two_again("Zed","Shaw")
 print_one("First!")
 print_none()
+
+# Not on Extra Credit but let's see what happens anyway :)
+print_two(print_none, print_one("testing"))

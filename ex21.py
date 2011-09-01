@@ -29,3 +29,12 @@ print "Here is a puzzle."
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "Can you do it by hand?"
+
+# Extra Credit
+def multiply_by(initial):
+    def L(value):
+        return initial * value
+    return L
+
+m_by_5 = multiply_by(5)
+print m_by_5(5)

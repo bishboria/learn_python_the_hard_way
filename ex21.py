@@ -38,3 +38,5 @@ def multiply_by(initial):
 
 m_by_5 = multiply_by(5)
 print m_by_5(5)
+
+print age + (height - (weight * (iq / 2)))

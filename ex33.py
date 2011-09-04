@@ -17,14 +17,14 @@ for num in numbers:
 
 # Extra Credit
 numbers = []
-def print_append_loop(count):
+def print_append_loop(count, increment):
     i = 0
     while i < count:
         print "At the top i is %d" % i
         numbers.append(i)
 
-        i += 1
+        i += increment
         print "Numbers now: ", numbers
         print "At the bottom i is %d" % i
 
-print_append_loop(3)
+print_append_loop(5, 2)

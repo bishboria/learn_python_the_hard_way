@@ -27,3 +27,33 @@ for i in range(0, 6):
 # now we can print them out too
 for i in elements:
     print "Element was: %d" % i
+
+# Extra Credit: alternative to block at line 22
+new_elements = range(0, 6)
+print new_elements
+
+# other methods available to lists
+els = range(0, 1000)
+print 5 in els # check for inclusion
+print range(0, 1000) == els # equality
+print range(-5, 1001) >= els # compares each element lexicograpically
+print els[14:17] # slices the list
+print els[0:2]
+print els[0] # accessing elements directly
+print els[1]
+print range(0, 5) * 2 # appends original list x-1 times onto itself
+print range(0, 5).pop()
+xs = range(0, 5)
+xs.reverse()
+print xs
+xs = [6, 2, 3, 5, 1]
+xs.sort()
+print xs
+xs = [1, 2, 3, 4, 5]
+xs.remove(3)
+print xs # value 3 is missing now
+xs = [1, 2, 3]
+xs.insert(1, 3)
+print xs # value 3 is now where value 2 was
+print xs.count(3) # how many 3's are in the list
+print xs.index(3) # index of first occurence of 3

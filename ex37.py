@@ -1,3 +1,5 @@
+# KEYWORDS
+
 # and
 print 1 == 1 and 2 == 2
 
@@ -126,3 +128,21 @@ add_to_10 = add(10)
 print add_to_10(0)
 print add_to_10(10)
 print add_to_10(1)
+
+
+# DATATYPES
+
+print True
+
+print False
+
+print None
+
+print "This is a string"
+print 'And so is this'
+
+print 5
+
+print 4.2
+
+print [1, 2, 4]

@@ -154,3 +154,36 @@ print 5
 print 4.2
 
 print [1, 2, 4]
+
+
+# String Escape Sequences
+
+print "\\"
+print "\'"
+print "\""
+print "\\a before\aafter"
+print "\\b before\bafter"
+print "\\f before\fafter"
+print "\\n before\nafter"
+print "\\r before\rafter"
+print "\\t before\tafter"
+print "\\v before\vafter"
+
+
+# String Formats
+
+print "%d" % 2
+print "%i" % 1.1
+print "%o" % 9 # octal
+print "%u" % 12345678
+print "%x" % 10
+print "%X" % 10
+print "%e" % 100
+print "%E" % 100
+print "%f" % 100
+print "%F" % 100
+print "%g" % 123
+print "%G" % 123
+print "%c" % 'b'
+print "%r" % "a"
+print "%s" % "a"

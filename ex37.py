@@ -136,7 +136,15 @@ print True
 
 print False
 
-print None
+if None:
+    print "None is true..."
+else:
+    print "None is false"
+
+if [] is None:
+    print "empty list is None."
+elif [] is not None:
+    print "empty list is not None."
 
 print "This is a string"
 print 'And so is this'

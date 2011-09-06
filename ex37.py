@@ -187,3 +187,86 @@ print "%G" % 123
 print "%c" % 'b'
 print "%r" % "a"
 print "%s" % "a"
+
+
+# Operators
+
+print 1 + 1
+print 2 - 1
+print 2 * 3
+print 2 ** 3
+print 2.0 / 3.0
+print 2 // 3
+print 2 % 3
+print 1 < 2
+print 2 > 1
+print 2 <= 2
+print 2 >= 2
+print 2.0 == 2.0
+print 1.1 != 1.0
+print 1.1 <> 1.0
+print (1, 2, 3) # tuples
+print 1, 2, 3
+print [1, 2, 3] # list
+print {"one":1, "two":2} # dictionaries
+print dict(one=1, two=2)
+print dict(zip(("one", "two"), (1, 2)))
+
+# @ is used in decorators
+# but decorators in python are more like macros
+# they allow you to modify functions
+def security_log_in_out(trans):
+    def inner(*args, **kwargs):
+        print "log in"
+        trans(*args, **kwargs)
+        print "log out"
+    return inner
+
+@security_log_in_out
+def deposit(money):
+    print "adding %r to account" % money
+
+deposit(100)
+
+
+print [1, 2, 3] # , usage
+print (1, 2, 3)
+print 1, 2, 3
+
+print [1, 2, 3][0:1] # : usage
+print {"key":"value"}
+
+a = [1, 2] # . usage
+a.append(3)
+print a
+
+print "hello"; print "there" # ; usage
+if 1 < 2: print "1"; print "is less than"; print "2"
+
+i = 0
+i += 1
+print i
+
+i = 0
+i -= 1
+print i
+
+i = 1
+i *= 3
+print i
+
+i = 7.0
+i /= 3.0
+print i
+
+i = 7.0
+i //= 3.0
+print i
+
+i = 7
+i %= 3
+print i
+
+i = 2
+i **= 3
+print i

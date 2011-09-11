@@ -2,6 +2,8 @@ from sys import exit
 from random import randint
 
 def death():
+    """"""
+
     quips = ["You died. You kinda suck at this.",
              "Nice job, you died... jackass.",
              "Such a luser.",
@@ -12,16 +14,18 @@ def death():
 
 
 def central_corridor():
-    print "The Gothons of Planet Percal #25 have invaded your ship and destroyed"
-    print "your entire crew. You are the last surviving member and your last"
-    print "mission is to get the neutron destruct bomb from the Weapons Armory."
-    print "put it in the bridge, and blow the ship up after getting into an "
-    print "escape pod."
-    print "\n"
-    print "You're running down the central corridor to the Weapons Armory when"
-    print "a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume"
-    print "flowing around his hate filled body. He's blocking the door to the"
-    print "Armory and about to pull a weapon to blast you."
+    """
+    The Gothons of Planet Percal #25 have invaded your ship and destroyed
+    your entire crew. You are the last surviving member and your last
+    mission is to get the neutron destruct bomb from the Weapons Armory.
+    put it in the bridge, and blow the ship up after getting into an 
+    escape pod.
+
+    You're running down the central corridor to the Weapons Armory when
+    a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume
+    flowing around his hate filled body. He's blocking the door to the
+    Armory and about to pull a weapon to blast you.
+    """
 
     action = raw_input("> ")
 
@@ -56,14 +60,18 @@ def central_corridor():
         print "DOES NOT COMPUTE!"
         return 'central_corridor'
 
+
 def laser_weapon_armory():
-    print "You do a dive roll into the Weapon Armory, crouch and scan the room"
-    print "for more Gothons that might be hiding. It's dead quiet, too quiet."
-    print "You stand up and run to the far side of the room and find the"
-    print "neutron bomb in its container. There's a keypad lock on the box"
-    print "and you need the code to get the bomb out. If you get the code"
-    print "wrong 10 times then the lock closes forever and you can't"
-    print "get the bomb. The code is 3 digits."
+    """
+    You do a dive roll into the Weapon Armory, crouch and scan the room
+    for more Gothons that might be hiding. It's dead quiet, too quiet.
+    You stand up and run to the far side of the room and find the
+    neutron bomb in its container. There's a keypad lock on the box
+    and you need the code to get the bomb out. If you get the code
+    wrong 10 times then the lock closes forever and you can't
+    get the bomb. The code is 3 digits.
+    """
+
     code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
     guess = raw_input("[keypad]> ")
     guesses = 0
@@ -90,12 +98,14 @@ def laser_weapon_armory():
 
 
 def the_bridge():
-    print "You burst onto the Bridge with the neutron destruct bomb"
-    print "under your arm and surprise 5 Gothons who are trying to"
-    print "take control of the ship. Each of them has an even uglier"
-    print "clown costume that the last. They haven't pulled their"
-    print "weapons out yet, as they see the active bomb under your"
-    print "arm and don't want to set it off."
+    """
+    You burst onto the Bridge with the neutron destruct bomb
+    under your arm and surprise 5 Gothons who are trying to
+    take control of the ship. Each of them has an even uglier
+    clown costume that the last. They haven't pulled their
+    weapons out yet, as they see the active bomb under your
+    arm and don't want to set it off.
+    """
 
     action = raw_input("> ")
 
@@ -124,13 +134,15 @@ def the_bridge():
         return "the_bridge"
 
 def escape_pod():
-    print "You rush through the ship desperately trying to make it to"
-    print "the escape pod before the whole ship explodes. It seems like"
-    print "hardly any Gothons are on the ship, so your run is clear of"
-    print "interference. You get tho the chamber with the escape pods, and"
-    print "now need to pick one to take. Some of them could be damaged"
-    print "but you don't have time to look. There's 5 pods, which one"
-    print "do you take?"
+    """
+    You rush through the ship desperately trying to make it to
+    the escape pod before the whole ship explodes. It seems like
+    hardly any Gothons are on the ship, so your run is clear of
+    interference. You get tho the chamber with the escape pods, and
+    now need to pick one to take. Some of them could be damaged
+    but you don't have time to look. There's 5 pods, which one
+    do you take?
+    """
 
     good_pod = randint(1, 5)
     guess = raw_input("[pod #]> ")
@@ -170,6 +182,7 @@ def runner(map, start):
     while True:
         room = map[next]
         print "\n--------"
+        print room.__doc__
         next = room()
 
 runner(ROOMS, 'central_corridor')

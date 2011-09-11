@@ -18,3 +18,16 @@ while True:
 
     city_found = cities['_find'](cities, state)
     print city_found
+
+for state in cities:
+    print cities[state], state
+
+print
+
+for state, city in cities.items():
+    print city, state
+
+print
+
+print cities
+print cities.items()

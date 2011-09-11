@@ -69,6 +69,9 @@ def laser_weapon_armory():
     guesses = 0
 
     while guess != code and guesses < 10:
+        if guess == "Gothon's suck":
+            guess = code
+            break
         print "BZZZZEDDD!"
         guesses += 1
         guess = raw_input("[keypad]> ")
@@ -133,6 +136,9 @@ def escape_pod():
     guess = raw_input("[pod #]> ")
 
 
+    if guess == "Even more cheating!":
+        guess = good_pod
+
     if int(guess) != good_pod:
         print "You jump into pod %s and hit the eject button." % guess
         print "The opd escapes out into the void of space, then"
@@ -167,3 +173,9 @@ def runner(map, start):
         next = room()
 
 runner(ROOMS, 'central_corridor')
+
+# returning the next room works by:
+# each room returns the name of the room to go to next.
+# this is then assigned to the next variable in the runner method.
+# the next room is then used as the key in the map to return the correct room function object
+# this method is executed by room()

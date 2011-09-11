@@ -20,3 +20,6 @@ print stuff[-1]
 print stuff.pop()
 print ' '.join(stuff)
 print '#'.join(stuff[3:5])
+
+# dir(something) returns a list of valid attributes for that something
+# the class of something determines what valid operations can be applied to it.
